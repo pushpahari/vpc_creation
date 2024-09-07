@@ -12,3 +12,9 @@ default ={
     Name = "vpc"
 }
 }
+
+variable "public_cidir_blocks" {
+  description = "public_cidir_blocks"
+  type = list(string)
+  default = ["10.0.1.0/24","10.0.2.0/24"]
+}
