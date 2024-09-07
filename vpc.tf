@@ -1,6 +1,6 @@
 resource "aws_vpc" "pushpa" {
-  cidr_block = "10.0.0.0/16"
+  cidr_block = var.vpc_cidr_block
   tags = {
-    Name = "vpc"
+    Name = var.vpc_tags
   }
 }
