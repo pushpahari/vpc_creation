@@ -17,3 +17,9 @@ variable "private_cidr_blocks" {
   type        = list(string)
   default     = ["10.0.3.0/24", "10.0.4.0/24"]
 }
+
+variable "public_sub_names" {
+description = " list of public subnet names"
+type = list(string)
+default = ["public1","public2"]
+}
