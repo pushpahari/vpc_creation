@@ -1,6 +1,6 @@
 resource "aws_subnet" "public_sub1" {
   vpc_id     = aws_vpc.pushpa.id
-  cidr_block = var.public_cidir_blocks
+  cidr_block = "10.0.1.0/24"
 
   tags = {
     Name = "public1"
@@ -9,7 +9,7 @@ resource "aws_subnet" "public_sub1" {
 
 resource "aws_subnet" "public_sub2" {
   vpc_id     = aws_vpc.pushpa.id
-  cidr_block = var.public_cidir_blocks
+  cidr_block = "10.0.2.0/24"
 
   tags = {
     Name = "public2"
