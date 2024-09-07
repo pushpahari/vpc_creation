@@ -22,7 +22,7 @@ resource "aws_subnet" "private_sub1" {
   cidr_block = var.private_cidr_blocks[0]
 
   tags = {
-    Name = "private1"
+    Name = var.private_sub_names[0]
   }
 }
 
@@ -31,6 +31,6 @@ resource "aws_subnet" "private_sub2" {
   cidr_block = var.private_cidr_blocks[1]
 
   tags = {
-    Name = "private2"
+    Name = var.private_sub_names[1]
   }
 }

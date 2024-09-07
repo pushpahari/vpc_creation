@@ -23,3 +23,9 @@ description = " list of public subnet names"
 type = list(string)
 default = ["public1","public2"]
 }
+
+variable "private_sub_names" {
+description = " list of private subnet names"
+type = list(string)
+default = ["private1","private2"]
+}
